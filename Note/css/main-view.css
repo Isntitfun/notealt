@@ -1,0 +1,22 @@
+.main-view {
+  border-radius: 10px;
+}
+
+.main-content {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+
+.main-content h2,
+.main-content p {
+  color: white;
+}
+
+.title {
+  font-size: 25px;
+}
+.text {
+  margin-top: 30px;
+  font-size: 14px;
+}

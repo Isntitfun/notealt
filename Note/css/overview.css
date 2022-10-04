@@ -1,0 +1,28 @@
+.overview {
+  background-color: black;
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+
+.overview h3 {
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.overview-list li {
+  margin-top: 3px;
+  padding: 5px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-out;
+}
+.overview-list li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.overview-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
