@@ -4,6 +4,11 @@
 @import url(overview.css);
 @import url(main-view.css);
 
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-family: "Inconsolata", monospace;
+}
 .grid {
   display: grid;
   height: 80vh;

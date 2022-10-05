@@ -9,6 +9,8 @@
   padding: 10px;
   border-radius: 3px;
   text-align: center;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .overview-list li {
@@ -24,5 +26,5 @@
 .overview-list a {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
 }
