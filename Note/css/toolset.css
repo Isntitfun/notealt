@@ -6,10 +6,70 @@
 }
 
 .home-btn {
-  background-color: black;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
   width: 40px;
   height: 40px;
   text-decoration: none;
   border-radius: 10px;
+  font-size: 15px;
+}
+
+.switch {
+  margin-top: 10px;
+  width: 40px;
+  height: 22px;
+  border-radius: 11px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  width: 40px;
+  height: 22px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 11px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.slider:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: black;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#night-mode:checked + .slider:before {
+  transform: translateX(18px);
+  background-color: white;
+}
+
+#night-mode:checked + .slider {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider:hover,
+#night-mode:checked + .slider:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
